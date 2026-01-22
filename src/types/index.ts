@@ -11,7 +11,7 @@ export interface Product {
   sales: number
   stock: number
   created_at: string
-  updated_at: string
+  updated_at?: string
   size?: string
   color?: string
 }

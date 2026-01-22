@@ -17,15 +17,7 @@ export interface LoginData {
 }
 
 // AuthUser 타입을 User 타입으로 통일
-export interface AuthUser {
-  id: string
-  email: string
-  name: string
-  phone?: string
-  address?: string
-  created_at: string
-  updated_at?: string
-}
+export type AuthUser = User
 
 // 회원가입
 export const signup = async (userData: SignupData): Promise<{ success: boolean; error?: string }> => {
